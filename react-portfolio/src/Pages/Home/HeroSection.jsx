@@ -1,3 +1,5 @@
 export default function HeroSection() {
-    return <h1>Hero Section</h1>;
+    return (
+        <section className="hero--section" id="HeroSection"></section>
+    );
 }
