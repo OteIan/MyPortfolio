@@ -33,8 +33,10 @@ export default function Navbar() {
     }, [])
     return (
         <nav className={`navbar${navActive ? " active" : ""}`}>
-            <div>
-                <img src="" alt="" />
+            <div className="navbar--logo">
+                <img src="./img/blue.png" alt="Logo" />
+                <span className="navbar--logo--left">Ian Ote</span>
+                <span className="navbar--logo--right">/ Backend Developer</span>
             </div>
             <a className={`nav__hamburger${navActive ? " active" : ""}`} onClick={toggleNav}>
                 <span className="nav__hamburger__line"></span>
@@ -82,19 +84,21 @@ export default function Navbar() {
                             My Projects
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                            onClick={closeMenu} activeClass="navbar--active-content"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            to="Contact"
+                            className="navbar--content"
+                        >
+                            Contact Me
+                        </Link>
+                    </li>
                 </ul>
             </div>
-            <Link
-                onClick={closeMenu} activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Contact"
-                className="btn btn-outline-primary"
-            >
-                Contact Me
-            </Link>
         </nav>
     )
 }
