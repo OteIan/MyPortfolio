@@ -1,15 +1,17 @@
+import React from 'react';
 import { Link } from "react-scroll";
 
-export default function HeroSection() {
+
+export default function Home() {
     return (
-        <section className="hero--section" id="HeroSection">
-            <section className="hero--section--profile--box">
+        <section className="home" id="Home">
+            <section className="home--profile--box">
                 <div>
                     <img src="./img/blue.png" alt="Ian Ote" />
                     <h3>Ian Ote</h3>
                     <p>BACKEND DEVELOPER</p>
-                    <div className="hero--section--socials">
-                        <ul>
+                    <div className="home--socials">
+                        {/* <ul>
                             <li>
                                 <a
                                     href="https://www.facebook.com/"
@@ -101,14 +103,14 @@ export default function HeroSection() {
                                     </svg>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </section>
-            <section className="hero--section--content--box">
+            <section className="home--content--box">
                 <h1>Welcome</h1>
                 <h4>Showcasing Web Development Expertise</h4>
-                <div className="hero--section--items">
+                <div className="home--items">
                     <ul>
                         <li>
                             <Link
@@ -138,7 +140,7 @@ export default function HeroSection() {
                         </li>
                     </ul>
                 </div>
-                <p className="hero--section--description">
+                <p className="home--description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla minus voluptate consectetur veniam numquam aspernatur ratione vitae voluptatem cumque velit?
                     <br /><br/>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, quis.

@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
     const [navActive, setNavActive] = useState(false);
 
-    const toggleNav = () => {
-        setNavActive(!navActive);
-    }
+    // const toggleNav = () => {
+    //     setNavActive(!navActive);
+    // }
 
     const closeMenu = () => {
         setNavActive(false);
@@ -38,11 +38,11 @@ export default function Navbar() {
                 <span className="navbar--logo--left">Ian Ote</span>
                 <span className="navbar--logo--right">/ Backend Developer</span>
             </div>
-            <a className={`nav__hamburger${navActive ? " active" : ""}`} onClick={toggleNav}>
+            {/* <a className={`nav__hamburger${navActive ? " active" : ""}`} onClick={toggleNav}>
                 <span className="nav__hamburger__line"></span>
                 <span className="nav__hamburger__line"></span>
                 <span className="nav__hamburger__line"></span>
-            </a>
+            </a> */}
             <div className={`navbar--items${navActive ? " active" : ""}`}>
                 <ul>
                     <li>
