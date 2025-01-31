@@ -1,0 +1,18 @@
+.
+├── App.css
+├── App.js
+├── Pages
+│   ├── ContactMe.js
+│   ├── Footer.js
+│   ├── Header.js
+│   ├── Home.js
+│   ├── MyProjects.js
+│   └── Resume.js
+├── data
+│   └── index.json
+├── iconComponents
+│   └── blue.js
+├── index.js
+└── structure.txt
+
+

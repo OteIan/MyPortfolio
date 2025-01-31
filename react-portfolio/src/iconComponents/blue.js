@@ -39,7 +39,7 @@ export default function Blue() {
             initial="hidden"
             animate="visible"
         >
-            <motion.rect width="24" height="24" fill="#0000FF"
+            <motion.rect width="24" height="24" fill="#0050FF"
                 variants={rectVariants}
             />
         </motion.svg>

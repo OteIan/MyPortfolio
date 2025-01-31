@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from "react-scroll";
 
-
 export default function Home() {
     return (
         <section className="home" id="Home">
             <section className="home--profile--box">
                 <div>
-                    <img src="./img/blue.png" alt="Ian Ote" />
+                    {/* <img src="./img/blue.png" alt="Ian Ote" /> */}
                     <h3>Ian Ote</h3>
                     <p>BACKEND DEVELOPER</p>
                     <div className="home--socials">

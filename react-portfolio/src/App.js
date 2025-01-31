@@ -1,24 +1,25 @@
-import './App.css';
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Routes} from 'react-router-dom';
-import Navbar from './Pages/Home/Navbar';
-import Home from './Pages/Home/Homescreen';
-import NotFound from './Pages/Home/Errors/NotFound';
-
+// import { Route, Routes } from 'react-router-dom';
+// import Home from './Pages/Home';
+// import Resume from './Pages/Resume';
+// import MyProjects from './Pages/MyProjects';
+// import ContactMe from './Pages/ContactMe';
+import Navbar from './Pages/Navbar';
+import Footer from './Pages/Footer';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <div>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
-      </Router>
-    </div>
+    <>
+      <Navbar />
+      {/* <Routes> */}
+        {/* <Route path="/" Component={Home} /> */}
+        {/* <Route path="/resume" Component={Resume} /> */}
+        {/* <Route path="/projects" Component={MyProjects} /> */}
+        {/* <Route path="/contact" Component={ContactMe} /> */}
+      {/* </Routes> */}
+      <Footer />
+    </>
   );
 }
 
